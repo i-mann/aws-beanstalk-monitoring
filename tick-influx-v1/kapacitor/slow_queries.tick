@@ -1,0 +1,8 @@
+stream
+  |from()
+    .measurement('mysql_global')
+  |alert()
+    .crit(lambda: "slow_queries" > 10)
+    .slack()
+    .channel('#db-alerts')
+    .message('High slow queries: {{ index .Fields "slow_queries" }}')

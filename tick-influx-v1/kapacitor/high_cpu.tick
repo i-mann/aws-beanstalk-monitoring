@@ -1,0 +1,12 @@
+stream
+  |from()
+    .measurement('cpu')
+  |window()
+    .period(5m)
+    .every(1m)
+  |mean('usage_idle')
+  |alert()
+    .crit(lambda: "mean" < 10)
+    .slack()
+    .channel('#ops')
+    .message('CPU usage critical: {{ index .Fields "mean" }}% idle')

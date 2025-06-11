@@ -1,0 +1,20 @@
+{
+  "status": "active",
+  "name": "MySQL Slow Queries Alert",
+  "description": "Alert when slow queries > 10 in last 5 min",
+  "orgID": "<your-org-id>",
+  "endpointID": "<slack-endpoint-id>",
+  "every": "1m",
+  "offset": "0s",
+  "tagRules": [],
+  "statusRules": [
+    {
+      "currentLevel": "CRIT"
+    }
+  ],
+  "labels": [],
+  "limit": 100,
+  "includeAll": false,
+  "messageTemplate": "{{ .Check.Name }}: {{ .Check.Status }} - {{ .CheckID }}",
+  "runbookLink": ""
+}

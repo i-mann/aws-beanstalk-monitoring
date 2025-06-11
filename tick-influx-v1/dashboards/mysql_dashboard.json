@@ -1,0 +1,8 @@
+//  fill this using Chronograf UI and export JSON
+{
+  "name": "MySQL Performance",
+  "templates": [],
+  "cells": [],
+  "queries": [],
+  "type": "dashboard"
+}

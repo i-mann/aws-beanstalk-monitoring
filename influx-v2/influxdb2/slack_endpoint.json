@@ -1,0 +1,8 @@
+{
+  "name": "Slack Notifications",
+  "type": "slack",
+  "description": "Send alerts to Slack",
+  "orgID": "<your-org-id>",
+  "url": "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX",
+  "token": "my-secret-token"
+}
